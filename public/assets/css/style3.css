@@ -3,13 +3,13 @@
     inherits: true;
     initial-value: 0;
   }
-  
+
   .pie {
     --p:0;
     --b:10px;
     --c:darkred;
     --w:150px;
-    
+
     width:var(--w);
     aspect-ratio:1;
     position:relative;
@@ -51,7 +51,7 @@
   @keyframes p {
     from{--p:0}
   }
-  
+
   body {
     background:#ddd;
   }
