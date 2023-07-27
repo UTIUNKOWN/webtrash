@@ -47,7 +47,7 @@
 
     <section class="home-section">
 
-            <div class="container" style="text-align: center; margin-top: 80 px">
+            <div class="container" style="text-align: center; ">
                 <img src="{{ 'img/TRASH.jpg' }}" style="width: 400px"class="container"
                     style="text-align: center; margin-top: 10 px">
                 <h4 class="pt-3" style="font-size: 28px; font-weight: bold; color: #00c3e5;">MONITORING TEMPAT SAMPAH
@@ -59,7 +59,7 @@
             {{-- kapasitas data 1 --}}
             <div class="container d-flex justify-content-center mt-5">
                 <div class="col-sm-6 intro-y">
-                    <div class="box p-5 zoom-in"style="background-color: #1072b8; margin-right: 20px;">
+                    <div class="box p-5 zoom-in"style="background-color: #1072b8; ">
                         <div class="flex items-center">
                             <div class="w-2/4 flex-none">
                                 <div class="text-lg font-medium truncate"style="color: white;">KAPASITAS</div>
