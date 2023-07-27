@@ -47,7 +47,7 @@
 
     <section class="home-section">
 
-            <div class="container" style="text-align: center; ">
+            <div class="container" style="text-align: center; margin-top: 80 px">
                 <img src="{{ 'img/TRASH.jpg' }}" style="width: 400px"class="container"
                     style="text-align: center; margin-top: 10 px">
                 <h4 class="pt-3" style="font-size: 28px; font-weight: bold; color: #00c3e5;">MONITORING TEMPAT SAMPAH
@@ -57,9 +57,9 @@
             </div>
 
             {{-- kapasitas data 1 --}}
-            <div class="container d-flex justify-content-center mt-5">
-                <div class="col-sm-6 intro-y">
-                    <div class="box p-5 zoom-in"style="background-color: #1072b8; ">
+            <div class="col-span-12 grid grid-cols-12 gap-6 mt-8">
+                <div class="col-span-12 sm:col-span-6 2xl:col-span-3 intro-y">
+                    <div class="box p-5 zoom-in"style="background-color: #1072b8;">
                         <div class="flex items-center">
                             <div class="w-2/4 flex-none">
                                 <div class="text-lg font-medium truncate"style="color: white;">KAPASITAS</div>
@@ -74,8 +74,8 @@
                 </div>
                 {{-- kapasitas data 2 --}}
 
-                    <div class="col-sm-6 intro-y">
-                    <div class="box p-5 zoom-in"style="background-color: #1072b8; margin-left: 20px;">
+                <div class="col-span-12 sm:col-span-6 2xl:col-span-3 intro-y">
+                    <div class="box p-5 zoom-in"style="background-color: #1072b8;">
                         <div class="flex items-center">
                             <div class="w-2/4 flex-none">
                                 <div class="text-lg font-medium truncate"style="color: white;">KAPASITAS</div>
@@ -83,9 +83,9 @@
                             </div>
                             <div class="flex-none ml-auto relative">
                                 <div id="progress2" data-donut={{ $kapasitas2 }}></div>
-                            </div>
-                            </div>
 
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
