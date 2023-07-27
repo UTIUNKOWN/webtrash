@@ -28,10 +28,10 @@ class DataController extends Controller
     public function getEdge(Request $request)
     {
         try {
-            $request->validate([
-                'id_sensor' => 'required',
-                'kapasitas' => 'required',
-            ]);
+            // $request->validate([
+            //     'id_sensor' => 'required',
+            //     'kapasitas' => 'required',
+            // ]);
             // dd($request->id_sensor);
             $data = monitoring::create([
                 'id_sensor' => $request->id_sensor,
