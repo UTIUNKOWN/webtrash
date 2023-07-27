@@ -304,7 +304,7 @@ header .image-text .profession {
     display: block;
     width: 100%;
     overflow-x: auto;
-    text-align: center;
+
 }
 .sidebar.open ~ .home-section {
     left: 250px;
