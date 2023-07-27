@@ -59,7 +59,7 @@
             {{-- kapasitas data 1 --}}
             <div class="container d-flex justify-content-center mt-5">
                 <div class="col-sm-6 intro-y">
-                    <div class="box p-5 zoom-in"style="background-color: #1072b8;">
+                    <div class="box p-5 zoom-in"style="background-color: #1072b8; margin-right: 20px;">
                         <div class="flex items-center">
                             <div class="w-2/4 flex-none">
                                 <div class="text-lg font-medium truncate"style="color: white;">KAPASITAS</div>
@@ -75,7 +75,7 @@
                 {{-- kapasitas data 2 --}}
 
                     <div class="col-sm-6 intro-y">
-                    <div class="box p-5 zoom-in"style="background-color: #1072b8;">
+                    <div class="box p-5 zoom-in"style="background-color: #1072b8; margin-left: 20px;">
                         <div class="flex items-center">
                             <div class="w-2/4 flex-none">
                                 <div class="text-lg font-medium truncate"style="color: white;">KAPASITAS</div>
@@ -85,7 +85,7 @@
                                 <div id="progress2" data-donut={{ $kapasitas2 }}></div>
                             </div>
                             </div>
-                        
+
                     </div>
                 </div>
             </div>
