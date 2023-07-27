@@ -296,14 +296,17 @@ header .image-text .profession {
 }
 .home-section {
     position: relative;
-    min-height: 100vh;
+    /* min-height: 100vh; */
     top: 0;
-    left: 78px;
+    /* left: 78px; */
     width: calc(100% - 78px);
     transition: all 0.5s ease;
+    display: block;
+    width: 100%;
+    overflow-x: auto;
 }
 .sidebar.open ~ .home-section {
-    left: 250px;
+    left: 0px;
     width: calc(100% - 250px);
 }
 .home-section .text {
