@@ -13,8 +13,8 @@
     height: 100%;
     width: 78px;
     background: #001172;
-    padding: 6px 14px;
-    z-index: 99;
+    padding: 0px 0px;
+    z-index: ;
     transition: all 0.5s ease;
 }
 .text-large {
@@ -304,7 +304,6 @@ header .image-text .profession {
     display: block;
     width: 100%;
     overflow-x: auto;
-
 }
 .sidebar.open ~ .home-section {
     left: 250px;
