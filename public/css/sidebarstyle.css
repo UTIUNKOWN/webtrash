@@ -303,7 +303,7 @@ header .image-text .profession {
     transition: all 0.5s ease;
     display: block;
     width: 100%;
-    /* overflow-x: auto; */
+    overflow-x: auto;
 }
 .sidebar.open ~ .home-section {
     left: 0px;
