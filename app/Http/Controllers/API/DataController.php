@@ -42,9 +42,26 @@ class DataController extends Controller
 
             // $data =monitoring::where('id', '=', $data->id)->get();
             if ($data) {
-                return ApiFormatter::createApi(200, 'success', $data);
+                // Mengirim notifikasi ke API "https://api.callmebot.com/whatsapp.php" setiap kali ada penambahan data
+                $phone = '6289529177034'; // Ganti dengan nomor WhatsApp yang ingin Anda gunakan
+                $message = "Kapasitas Sampah pada tempat sampah " . $request->id_sensor . " adalah " . $request->kapasitas . " %";
+
+                $apikey = '1481432'; // Ganti dengan API key yang Anda miliki
+
+                $response = Http::get("https://api.callmebot.com/whatsapp.php", [
+                    'phone' => $phone,
+                    'text' => $message,
+                    'apikey' => $apikey
+                ]);
+
+                // Cek apakah notifikasi berhasil dikirim atau tidak
+                if ($response->successful()) {
+                    return ApiFormatter::createApi(200, 'success', $data);
+                } else {
+                    return ApiFormatter::createApi(500, 'failed to send notification');
+                }
             } else {
-                // return ApiFormatter::createApi(400, 'failed');
+                return ApiFormatter::createApi(400, 'failed');
             }
         } catch (Exception $error) {
             return ApiFormatter::createApi(400, $error->getMessage());
@@ -177,4 +194,38 @@ class DataController extends Controller
 
         return view('kapasitassampah2', ['data2' => $kapasitas2]);
     }
+    public function postEdge(Request $request)
+{
+    try {
+        $data = monitoring::create([
+            'id_sensor' => $request->id_sensor,
+            'kapasitas' => $request->kapasitas
+        ]);
+
+        if ($data) {
+            // Mengirim notifikasi ke API "https://api.callmebot.com/whatsapp.php" setiap kali ada penambahan data
+            $phone = '6289529177034'; // Ganti dengan nomor WhatsApp yang ingin Anda gunakan
+            $message = "Kapasitas Sampah pada tempat sampah " . $request->id_sensor . " adalah " . $request->kapasitas . " %";
+
+            $apikey = '1481432'; // Ganti dengan API key yang Anda miliki
+
+            $response = Http::get("https://api.callmebot.com/whatsapp.php", [
+                'phone' => $phone,
+                'text' => $message,
+                'apikey' => $apikey
+            ]);
+
+            // Cek apakah notifikasi berhasil dikirim atau tidak
+            if ($response->successful()) {
+                return ApiFormatter::createApi(200, 'success', $data);
+            } else {
+                return ApiFormatter::createApi(500, 'failed to send notification');
+            }
+        } else {
+            return ApiFormatter::createApi(400, 'failed');
+        }
+    } catch (Exception $error) {
+        return ApiFormatter::createApi(400, $error->getMessage());
+    }
+}
 }
