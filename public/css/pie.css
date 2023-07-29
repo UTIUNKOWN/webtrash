@@ -6,7 +6,6 @@ text {
     fill: #1072b8;
   }
 #progress {
-
     margin: 0 auto;
 }
 
@@ -16,12 +15,10 @@ path.color0 {
 
 path.color1 {
     fill:  #1072b8;
-
 }
 
 circle.circle {
     fill: #fff;
     stroke-width: 2;
-
 }
 

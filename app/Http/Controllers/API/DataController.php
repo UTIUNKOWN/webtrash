@@ -22,8 +22,10 @@ class DataController extends Controller
     {
         $data['kapasitas1'] = monitoring::where('id_sensor', 1)->latest('created_at')->value('kapasitas');
         $data['kapasitas2'] = monitoring::where('id_sensor', 2)->latest('created_at')->value('kapasitas');
-
-        return view('monitoring',$data);
+        return view('monitoring', [
+            'kapasitas1' => $data['kapasitas1'],
+            'kapasitas2' => $data['kapasitas2'],
+        ]);
     }
     public function getEdge(Request $request)
     {

@@ -24,6 +24,7 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css" />
     <link rel="stylesheet" href="/css/sidebarstyle.css" />
     <link rel="stylesheet" href="{{ asset('css/pie.css') }}">
+    <style></style>
     <title>Pantau Sampah</title>
     <script src="https://kit.fontawesome.com/5c86256b06.js" crossorigin="anonymous"></script>
     <script src="http://code.jquery.com/jquery-latest.js"></script>
@@ -33,15 +34,7 @@
 {{-- <script type="text/javascript" src="{{('jquery/jquery.min.js')}}"></script> --}}
 
 {{-- ajax untuk realtime --}}
-<script type="text/javascript">
-    $(document).ready(function() {
-        setInterval(function() {
-            $("#kapasitas").load("{{ url('kapasitassampah') }}");
-            $("#kapasitas2").load("{{ url('kapasitassampah2') }}");
 
-        }, 1000);
-    });
-</script>
 
 <body>
 
@@ -66,7 +59,7 @@
                                 <div class="text-slate-500 mt-1"style="color: white;">TEMPAT SAMPAH 1</div>
                             </div>
                             <div class="flex-none ml-auto relative">
-                                <div id="progress" data-donut={{ $kapasitas1 }}></div>
+                                <div id="progress" data-donut={{ $kapasitas1 }} ></div>
                             </div>
 
                         </div>
@@ -155,11 +148,20 @@
     <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
     <script src="https://d3js.org/d3.v3.min.js"></script>
 
+
+    {{-- <script type="text/javascript">
+        $(document).ready(function() {
+            setInterval(function() {
+                $("#progress").load("{{ url('kapasitassampah') }}");
+                $("#progress2").load("{{ url('kapasitassampah2') }}");
+
+            }, 1000);
+        });
+    </script> --}}
+
     <script src="{{ asset('js/progress.js') }}"></script>
     <script src="{{ asset('js/monitor.js') }}"></script>
     <script src="{{ asset('js/pie.js') }}"></script>
-
-
 
 
 </body>
