@@ -16,7 +16,9 @@ use Illuminate\Support\Facades\Route;
 */
 // Route::get('/dashboard');
 Route::get('/',[DataController::class,'index']);
-Route::get('/kapasitassampah',[DataController::class,'getEdge']);
+Route::get('/get-kapasitas', [DataController::class,'getKapasitas']);
+
+Route::get('/kapasitassampah',[DataController::class,'getKapasitas']);
 
 Route::get('/test',[DataController::class,'index']);
 Route::get('/kapasitassampah',[DataController::class,'showMonitoring']);

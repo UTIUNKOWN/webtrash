@@ -7,7 +7,7 @@ var util = require("util");
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: false }));
 
-app.post("/monitor", function (req, res, next) {
+app.post("/", function (req, res, next) {
     console.log(util.inspect(req.body, false, null));
     res.send("ack");
 });

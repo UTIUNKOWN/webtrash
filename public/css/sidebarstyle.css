@@ -12,7 +12,7 @@
     top: 0;
     height: 100%;
     width: 78px;
-    background: #001172;
+    background: #ffffff;
     padding: 6px 14px;
     z-index: 99;
     transition: all 0.5s ease;
@@ -104,7 +104,7 @@ header .image-text .profession {
     left: calc(100% + 15px);
     z-index: 3;
     background: #fff;
-    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3);
+    box-shadow: 0 5px 10px rgba(255, 255, 255, 0.3);
     padding: 6px 12px;
     border-radius: 4px;
     font-size: 15px;
