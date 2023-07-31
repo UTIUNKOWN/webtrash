@@ -43,7 +43,7 @@
 
             {{-- kapasitas data 1 --}}
             <div class="col-span-12 grid grid-cols-12 gap-6 mt-8">
-                <div class="col-span-12 sm:col-span-6 2xl:col-span-3 intro-y  offset-sm-4">
+                <div class="col-span-12 sm:col-span-6 2xl:col-span-3 intro-y ">
                     <div class="box p-5 zoom-in"style="background-color: #1072b8;">
                         <div class="flex items-center">
                             <div class="w-2/4 flex-none">
@@ -59,7 +59,7 @@
                 </div>
                 {{-- kapasitas data 2 --}}
 
-                <div class="col-span-12 sm:col-span-4 2xl:col-span-3 intro-y ">
+                <div class="col-span-12 sm:col-span-6 2xl:col-span-3 intro-y ">
                     <div class="box p-5 zoom-in"style="background-color: #1072b8;">
                         <div class="flex items-center">
                             <div class="w-2/4 flex-none">
