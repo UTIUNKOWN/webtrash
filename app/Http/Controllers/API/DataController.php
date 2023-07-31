@@ -1,7 +1,7 @@
 <?php
 
 namespace App\Http\Controllers\API;
-
+use Telegram\Bot\Api;
 use App\Helpers\ApiFormatter;
 use App\Http\Controllers\Controller;
 use App\Models\monitoring;
@@ -60,18 +60,15 @@ public function getKapasitas()
 
             // $data =monitoring::where('id', '=', $data->id)->get();
             if ($data) {
-                // Mengirim notifikasi ke API "https://api.callmebot.com/whatsapp.php" setiap kali ada penambahan data
-                $phone = '6289529177034'; // Ganti dengan nomor WhatsApp yang ingin Anda gunakan
+                $chatId = '989667149'; // Ganti dengan chat ID Anda
                 $message = "Kapasitas Sampah pada tempat sampah " . $request->id_sensor . " adalah " . $request->kapasitas . " %";
 
-                $apikey = '1481432'; // Ganti dengan API key yang Anda miliki
+                $telegramBotToken = '5783421327:AAFOLrqPiJLGrjYZ-RaN7qM7oT2gN4Jpp8A'; // Ganti dengan token bot Anda
 
-                $response = Http::get("https://api.callmebot.com/whatsapp.php", [
-                    'phone' => $phone,
-                    'text' => $message,
-                    'apikey' => $apikey
+                $response = Http::get("https://api.telegram.org/bot{$telegramBotToken}/sendMessage", [
+                    'chat_id' => $chatId,
+                    'text' => $message
                 ]);
-
                 // Cek apakah notifikasi berhasil dikirim atau tidak
                 if ($response->successful()) {
                     return ApiFormatter::createApi(200, 'success', $data);
