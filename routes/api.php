@@ -16,7 +16,7 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('monitoring',[DataController::class,'index']);
-Route::post('monitoring',[DataController::class,'getEdge']);
+Route::post('monitoring',[DataController::class,'edgeGet']);
 // Route::post('monitoring',[DataController::class,'postEdge']);
 
 // Route::get('monitoring',[DataController::class,'getEdge']);

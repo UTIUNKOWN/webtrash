@@ -17,6 +17,7 @@ return new class extends Migration
             $table->id();
             $table->integer('id_sensor');
             $table->integer('kapasitas');
+            $table->string('waktu_pengiriman_data')->nullable();
             $table->timestamps();
         });
     }

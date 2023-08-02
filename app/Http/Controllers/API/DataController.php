@@ -243,4 +243,64 @@ public function getKapasitas()
         return ApiFormatter::createApi(400, $error->getMessage());
     }
 }
+
+public function edgeGet(Request $request)
+{
+    try {
+        $request->validate([
+            'id_sensor' => 'required',
+            'kapasitas' => 'required',
+        ]);
+
+        // Catat waktu sebelum pengiriman data dari edge
+        $startTime = Carbon::now();
+
+        // Simpan data dari edge ke dalam database
+        $data = monitoring::create([
+            'id_sensor' => $request->id_sensor,
+            'kapasitas' => $request->kapasitas,
+        ]);
+
+        // Catat waktu setelah pengiriman data dari edge
+        $endTime = Carbon::now();
+        $duration = $endTime->diffInMilliseconds($startTime);
+
+        // Ubah format durasi waktu menjadi "Time taken: 2035 ms"
+        $formattedDuration = 'Time taken: ' . $duration . ' ms';
+
+        // Simpan durasi waktu pengiriman data dari edge ke dalam kolom "waktu_pengiriman_data"
+        $data->update(['waktu_pengiriman_data' => $formattedDuration]);
+
+        // Kirim respons sukses ke edge
+        return ApiFormatter::createApi(200, 'success', [
+            'data' => $data,
+            'waktu_pengiriman_data' => $formattedDuration,
+        ]);
+        if ($data) {
+            $chatId = '989667149'; // Ganti dengan chat ID Anda
+            $message = "Kapasitas Sampah pada tempat sampah " . $request->id_sensor . " adalah " . $request->kapasitas . " %";
+            $formattedDuration = 'Time taken: ' . $duration . ' ms';
+            $telegramBotToken = '5783421327:AAFOLrqPiJLGrjYZ-RaN7qM7oT2gN4Jpp8A'; // Ganti dengan token bot Anda
+
+            $response = Http::get("https://api.telegram.org/bot{$telegramBotToken}/sendMessage", [
+                'chat_id' => $chatId,
+                'text' => $message,
+                'waktu'=> $formattedDuration
+            ]);
+            // Cek apakah notifikasi berhasil dikirim atau tidak
+            if ($response->successful()) {
+                return ApiFormatter::createApi(200, 'success', $data);
+            } else {
+                return ApiFormatter::createApi(500, 'failed to send notification');
+            }
+        } else {
+            return ApiFormatter::createApi(400, 'failed');
+        }
+    } catch (Exception $error) {
+        // Jika terjadi kesalahan, tangkap dan kirim respons ke edge
+        return ApiFormatter::createApi(400, 'failed', $error->getMessage());
+    }
+}
+
+
 }
