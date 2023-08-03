@@ -17,8 +17,6 @@ return new class extends Migration
             $table->id();
             $table->integer('id_sensor');
             $table->integer('kapasitas');
-            $table->integer('durasi_sensor_to_edge')->nullable();
-            $table->integer('durasi_edge_to_cloud')->nullable();
             $table->timestamps();
         });
     }
