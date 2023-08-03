@@ -301,7 +301,6 @@ public function edgeGet(Request $request)
         return ApiFormatter::createApi(200, 'success', [
             'data' => $data,
             'waktu_pengiriman_data_from_sensor_to_edge' => $formattedDurationFromSensor,
-            'waktu_pengiriman_data_from_edge_to_cloud' => 'Time taken from edge to cloud: ' . $durationFromEdge . ' ms',
         ]);
     } catch (Exception $error) {
         // Jika terjadi kesalahan, tangkap dan kirim respons ke edge
