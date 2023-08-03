@@ -282,7 +282,7 @@ public function edgeGet(Request $request)
 
         $response = Http::get("https://api.telegram.org/bot{$telegramBotToken}/sendMessage", [
             'chat_id' => $chatId,
-            'text' => $message . ' ' . $formattedDurationFromSensor,
+            'text' => $message 
         ]);
 
         // Cek apakah notifikasi berhasil dikirim atau tidak
@@ -300,6 +300,8 @@ public function edgeGet(Request $request)
         // Kirim respons sukses ke edge
         return ApiFormatter::createApi(200, 'success', [
             'data' => $data,
+            'waktu_pengiriman_data_from_sensor_to_edge' => $formattedDurationFromSensor,
+            'waktu_pengiriman_data_from_edge_to_cloud' => 'Time taken from edge to cloud: ' . $durationFromEdge . ' ms',
         ]);
     } catch (Exception $error) {
         // Jika terjadi kesalahan, tangkap dan kirim respons ke edge
