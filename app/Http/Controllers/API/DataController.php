@@ -10,7 +10,7 @@ use Exception;
 use Illuminate\Support\Facades\Http;
 use GuzzleHttp\Client;
 use Carbon\Carbon;
-
+use Illuminate\Support\Facades\Log;
 class DataController extends Controller
 {
     /**
@@ -244,6 +244,8 @@ public function getKapasitas()
     }
 }
 
+
+
 public function edgeGet(Request $request)
 {
     try {
@@ -252,8 +254,8 @@ public function edgeGet(Request $request)
             'kapasitas' => 'required',
         ]);
 
-        // Catat waktu sebelum pengiriman data dari edge
-        $startTime = Carbon::now();
+        // Catat waktu sebelum pengiriman data dari sensor ke edge
+        $startTimeFromSensor = microtime(true);
 
         // Simpan data dari edge ke dalam database
         $data = monitoring::create([
@@ -261,46 +263,57 @@ public function edgeGet(Request $request)
             'kapasitas' => $request->kapasitas,
         ]);
 
-        // Catat waktu setelah pengiriman data dari edge
-        $endTime = Carbon::now();
-        $duration = $endTime->diffInMilliseconds($startTime);
+        // Catat waktu setelah pengiriman data dari sensor ke edge
+        $endTimeFromSensor = microtime(true);
+        $durationFromSensor = round(($endTimeFromSensor - $startTimeFromSensor) * 1000); // Dalam milidetik
 
-        // Ubah format durasi waktu menjadi "Time taken: 2035 ms"
-        $formattedDuration = 'Time taken: ' . $duration . ' ms';
+        // Catat waktu sebelum pengiriman data dari edge ke cloud
+        $startTimeFromEdge = microtime(true);
 
-        // Simpan durasi waktu pengiriman data dari edge ke dalam kolom "waktu_pengiriman_data"
-        $data->update(['waktu_pengiriman_data' => $formattedDuration]);
+        // Kirim notifikasi ke Telegram
+        $chatId = '989667149'; // Ganti dengan chat ID Anda
+        $message = "Kapasitas Sampah pada tempat sampah " . $request->id_sensor . " adalah " . $request->kapasitas . " %";
+
+        // Simpan durasi waktu pengiriman data dari sensor ke edge ke dalam kolom "durasi_sensor_to_edge"
+        $data->update(['durasi_sensor_to_edge' => $durationFromSensor]);
+
+        $formattedDurationFromSensor = 'Time taken from sensor to edge: ' . $durationFromSensor . ' ms';
+        $telegramBotToken = '5783421327:AAFOLrqPiJLGrjYZ-RaN7qM7oT2gN4Jpp8A'; // Ganti dengan token bot Anda
+
+        $response = Http::get("https://api.telegram.org/bot{$telegramBotToken}/sendMessage", [
+            'chat_id' => $chatId,
+            'text' => $message . ' ' . $formattedDurationFromSensor,
+        ]);
+
+        // Cek apakah notifikasi berhasil dikirim atau tidak
+        if (!$response->successful()) {
+            Log::error('Failed to send notification to Telegram');
+        }
+
+        // Catat waktu setelah pengiriman data dari edge ke cloud
+        $endTimeFromEdge = microtime(true);
+        $durationFromEdge = round(($endTimeFromEdge - $startTimeFromEdge) * 1000); // Dalam milidetik
+
+        // Simpan durasi waktu pengiriman data dari edge ke cloud ke dalam kolom "durasi_edge_to_cloud"
+        $data->update(['durasi_edge_to_cloud' => $durationFromEdge]);
 
         // Kirim respons sukses ke edge
         return ApiFormatter::createApi(200, 'success', [
             'data' => $data,
-            'waktu_pengiriman_data' => $formattedDuration,
+            'waktu_pengiriman_data_from_sensor_to_edge' => $formattedDurationFromSensor,
+            'waktu_pengiriman_data_from_edge_to_cloud' => 'Time taken from edge to cloud: ' . $durationFromEdge . ' ms',
         ]);
-        if ($data) {
-            $chatId = '989667149'; // Ganti dengan chat ID Anda
-            $message = "Kapasitas Sampah pada tempat sampah " . $request->id_sensor . " adalah " . $request->kapasitas . " %";
-            $formattedDuration = 'Time taken: ' . $duration . ' ms';
-            $telegramBotToken = '5783421327:AAFOLrqPiJLGrjYZ-RaN7qM7oT2gN4Jpp8A'; // Ganti dengan token bot Anda
-
-            $response = Http::get("https://api.telegram.org/bot{$telegramBotToken}/sendMessage", [
-                'chat_id' => $chatId,
-                'text' => $message,
-                'waktu'=> $formattedDuration
-            ]);
-            // Cek apakah notifikasi berhasil dikirim atau tidak
-            if ($response->successful()) {
-                return ApiFormatter::createApi(200, 'success', $data);
-            } else {
-                return ApiFormatter::createApi(500, 'failed to send notification');
-            }
-        } else {
-            return ApiFormatter::createApi(400, 'failed');
-        }
     } catch (Exception $error) {
         // Jika terjadi kesalahan, tangkap dan kirim respons ke edge
         return ApiFormatter::createApi(400, 'failed', $error->getMessage());
     }
 }
+
+
+
+
+
+
 
 
 }
