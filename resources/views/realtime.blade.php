@@ -35,7 +35,7 @@
             <div class="container" style="text-align: center; margin-top: 80 px">
                 <img src="{{ 'img/TRASH.jpg' }}" style="width: 400px"class="container"
                     style="text-align: center; margin-top: 10 px">
-                <h4 class="pt-3" style="font-size: 28px; font-weight: bold; color: #00c3e5;">MONITORING TEMPAT SAMPAH
+                <h4 class="pt-3" style="font-size: 28px; font-weight: bold; color: #00c3e5;">SUDAH SEMHAS BOS
                 </h4>
                 {{-- <h5 class="mb-2">REKAYASA SISTEM KOMPUTER</h5> --}}
                 <hr>
