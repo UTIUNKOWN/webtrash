@@ -103,6 +103,7 @@ class DataController extends Controller
      */
     public function store()
     {
+
     }
     /**
      * Display the specified resource.
@@ -125,6 +126,18 @@ class DataController extends Controller
     {
         //
     }
+
+    public function dashboard() {
+        $kapasitas1 = monitoring::where('id_sensor', 1)->latest('created_at')->value('kapasitas');
+        $kapasitas2 = monitoring::where('id_sensor', 2)->latest('created_at')->value('kapasitas');
+
+        // Mengirimkan data ke view 'dashboard' dalam bentuk array
+        return view('dashboard', [
+            'kapasitas1' => $kapasitas1,
+            'kapasitas2' => $kapasitas2,
+        ]);
+    }
+
 
     /**
      * Update the specified resource in storage.
@@ -309,5 +322,11 @@ class DataController extends Controller
             // Jika terjadi kesalahan, tangkap dan kirim respons ke edge
             return ApiFormatter::createApi(400, 'failed', $error->getMessage());
         }
+    }
+
+    public function data()
+    {
+        $datas = Monitoring::orderBy('id', 'desc')->paginate(10);
+        return view('data', compact('datas'));
     }
 }
