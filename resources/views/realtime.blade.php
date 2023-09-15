@@ -38,7 +38,7 @@ https://templatemo.com/tm-587-tiya-golf-club
             <nav class="navbar navbar-expand-lg">
                 <div class="container">
                     <a class="navbar-brand d-flex align-items-center" href="index.html">
-                        <img src="images/logo.png" class="navbar-brand-image img-fluid" alt="PENELITIAN SITI">
+                        <img src="images/logo.png" class="navbar-brand-image img-fluid" alt="">
                         <span class="navbar-brand-text">
                             Siti
                         </span>
