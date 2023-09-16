@@ -273,6 +273,7 @@ https://templatemo.com/tm-587-tiya-golf-club
 
         // Fungsi untuk menginisialisasi pie chart
         // Fungsi untuk menginisialisasi pie chart
+// Fungsi untuk menginisialisasi donut chart dengan angka kapasitas di tengah
 function initializeDonutChart(canvas, kapasitas, label, color) {
     var ctx = canvas.getContext('2d');
     var sisa = Math.max(0, 100 - kapasitas);
@@ -325,6 +326,9 @@ function initializeDonutChart(canvas, kapasitas, label, color) {
         options: options
     });
 }
+
+
+
 
 // Inisialisasi donut chart untuk TEMPAT SAMPAH 1 dengan warna merah
 var canvas1 = document.getElementById('persentasesampah1');

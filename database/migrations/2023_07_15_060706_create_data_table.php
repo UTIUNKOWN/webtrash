@@ -3,6 +3,7 @@
 use Illuminate\Database\Migrations\Migration;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Support\Facades\Schema;
+use Carbon\Carbon;
 
 return new class extends Migration
 {
@@ -17,6 +18,7 @@ return new class extends Migration
             $table->id();
             $table->integer('id_sensor');
             $table->integer('kapasitas');
+            $table->dateTime('waktu')->default(now()); 
             $table->timestamps();
         });
     }
@@ -29,5 +31,6 @@ return new class extends Migration
     public function down()
     {
         Schema::dropIfExists('data');
+
     }
 };

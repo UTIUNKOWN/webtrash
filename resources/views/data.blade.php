@@ -113,7 +113,8 @@ https://templatemo.com/tm-587-tiya-golf-club
 <body>
 
     <main>
-        <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+        <nav class="navbar navbar-expand-lg navbar-dark fixed-top" style="background-color: rgb(61, 64, 91);">
+
             <div class="container">
                 <a class="navbar-brand d-flex align-items-center" href="index.html">
                     <img src="images/logo.png" class="navbar-brand-image img-fluid" alt="Tiya Golf Club">
@@ -142,11 +143,18 @@ https://templatemo.com/tm-587-tiya-golf-club
                         </li>
                     </ul>
                 </div>
+
             </div>
+
         </nav>
 
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+            <path fill="#3D405B" fill-opacity="1"
+                d="M0,224L34.3,192C68.6,160,137,96,206,90.7C274.3,85,343,139,411,144C480,149,549,107,617,122.7C685.7,139,754,213,823,240C891.4,267,960,245,1029,224C1097.1,203,1166,181,1234,160C1302.9,139,1371,117,1406,106.7L1440,96L1440,0L1405.7,0C1371.4,0,1303,0,1234,0C1165.7,0,1097,0,1029,0C960,0,891,0,823,0C754.3,0,686,0,617,0C548.6,0,480,0,411,0C342.9,0,274,0,206,0C137.1,0,69,0,34,0L0,0Z">
+            </path>
+        </svg>
         <section>
-            <div class="container" style="margin-top: 150px; ">
+            <div class="container" style="margin-top:0px; ">
                 <h2 class="text-center">Tabel Data bla bla</h2>
                 <table class="table table-success table-striped table-custom">
                     <thead>

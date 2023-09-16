@@ -22,7 +22,7 @@ Route::get('/get-kapasitas', [DataController::class,'getKapasitas']);
 Route::get('/kapasitassampah',[DataController::class,'getKapasitas']);
 
 Route::get('/test',[DataController::class,'index']);
-Route::get('/kapasitassampah',[DataController::class,'showMonitoring']);
-Route::get('/kapasitassampah2',[DataController::class,'showMonitoring2']);
+Route::get('/kapasitassampah',[DataController::class,'getKapasitas']);
+Route::get('/kapasitassampah2',[DataController::class,'getKapasitas']);
 Route::get('/dashboard', [DataController::class,'dashboard']);
 Route::get('/data', [DataController::class,'data']);

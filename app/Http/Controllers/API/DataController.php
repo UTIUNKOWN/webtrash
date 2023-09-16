@@ -55,7 +55,8 @@ class DataController extends Controller
             // dd($request->id_sensor);
             $data = monitoring::create([
                 'id_sensor' => $request->id_sensor,
-                'kapasitas' => $request->kapasitas
+                'kapasitas' => $request->kapasitas,
+                'waktu' => now(),
                 // 'id_sensor' => $request->input('id_sensor'),
                 // 'kapasitas' => $request->input('kapasitas'),
             ]);
