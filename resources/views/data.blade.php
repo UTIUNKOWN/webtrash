@@ -171,7 +171,7 @@ https://templatemo.com/tm-587-tiya-golf-club
                         <tr>
                             <th style="width: 10px;">Waktu</th>
                             <th style="width: 50px;">Tempat Sampah</th>
-                            <th style="width: 50px;">Kapasitas</th>
+                            <th style="width: 50px;">Kapasitas %</th>
                         </tr>
                     </thead>
                     <tbody>
@@ -242,7 +242,7 @@ https://templatemo.com/tm-587-tiya-golf-club
                 method: 'GET',
                 success: function (data) {
                     // Perbarui nilai kapasitas1 pada elemen dengan ID "kapasitas1"
-                    $('#kapasitas1').text(data.kapasitas1 + '%');
+                    $('#kapasitas1').text(data.kapasitas1 + '');
                 }
             });
         }
