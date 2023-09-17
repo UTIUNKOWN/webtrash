@@ -8,7 +8,7 @@
     <meta name="description" content="">
     <meta name="author" content="">
 
-    <title>Sudah Semhas Ni Boossssss</title>
+    <title>PANTAU SAMPAH</title>
 
     <!-- CSS FILES -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -165,7 +165,8 @@ https://templatemo.com/tm-587-tiya-golf-club
         </svg>
         <section>
             <div class="container" style="margin-top:0px; ">
-                <h2 class="text-center">Tabel Data bla bla</h2>
+                {{-- <img src="img/TRASH.jpg" style="width: 100%; height: auto;"> --}}
+                <h2 class="text-center">Tabel Data Kapasitas Sampah</h2>
                 <table class="table table-success table-striped table-custom">
                     <thead>
                         <tr>

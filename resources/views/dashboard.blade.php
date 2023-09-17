@@ -138,11 +138,11 @@ https://templatemo.com/tm-587-tiya-golf-club
 
 
         <section class="about-section section-padding" id="section_2">
-            <div class="container">
+            <div class="container" >
                 <div></div>
             </div>
 
-            <div class="container">
+            <div class="container ">
 
                 <div class="row">
                     <!-- Bagian TEMPAT SAMPAH 1 -->
@@ -193,7 +193,7 @@ https://templatemo.com/tm-587-tiya-golf-club
 
 
     <footer class="site-footer">
-        <h3 class="text-center">Sudah Semhas Ni Boss</h3>
+        <h3 class="text-center">Pantau Sampah</h3>
 
         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
             <path fill="#81B29A" fill-opacity="1"
