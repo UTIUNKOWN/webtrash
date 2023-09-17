@@ -33,6 +33,16 @@ https://templatemo.com/tm-587-tiya-golf-club
 -->
 
     <style>
+        .card-footer {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 10vh;
+            /* Optional: Mengisi tinggi layar */
+        }
+    </style>
+
+    <style>
         /* Mengatur ukuran dan penempatan tabel */
         .table-custom {
             max-width: 70%;
@@ -169,7 +179,7 @@ https://templatemo.com/tm-587-tiya-golf-club
                             <tr>
                                 <td>{!! $dat->created_at !!}</td>
                                 <td>{{ $dat->id_sensor }}</td>
-                                <td>{!! $dat->kapasitas !!}</td>
+                                <td id="kapasitas1">{!! $dat->kapasitas !!}</td>
                             </tr>
                         @empty
                             <tr>
@@ -184,65 +194,17 @@ https://templatemo.com/tm-587-tiya-golf-club
                 </table>
 
             </div>
-            @if($datas->hasPages())
-            <div class="card-footer">
-                {{ $datas->links() }}
-            </div>
+            @if ($datas->hasPages())
+                <div class="card-footer text-center">
+                    {{ $datas->links() }}
+                </div>
             @endif
         </section>
 
     </main>
 
     <footer class="site-footer">
-        <div class="container">
-            <div class="row">
-
-                <div class="col-lg-6 col-12 me-auto mb-5 mb-lg-0">
-                    <a class="navbar-brand d-flex align-items-center" href="index.html">
-                        <img src="images/logo.png" class="navbar-brand-image img-fluid" alt="">
-                        <span class="navbar-brand-text">
-                            Sudah Semhas Ni Boss
-                        </span>
-                    </a>
-                </div>
-
-                <div class="col-lg-3 col-12">
-                    <h5 class="site-footer-title mb-4">Join Us</h5>
-
-                    <p class="d-flex border-bottom pb-3 mb-3 me-lg-3">
-                        <span>Mon-Fri</span>
-                        6:00 AM - 6:00 PM
-                    </p>
-
-                    <p class="d-flex me-lg-3">
-                        <span>Sat-Sun</span>
-                        6:30 AM - 8:30 PM
-                    </p>
-                    <br>
-                    <p class="copyright-text">Copyright © 2048 Tiya Golf Club</p>
-                </div>
-
-                <div class="col-lg-2 col-12 ms-auto">
-                    <ul class="social-icon mt-lg-5 mt-3 mb-4">
-                        <li class="social-icon-item">
-                            <a href="#" class="social-icon-link bi-instagram"></a>
-                        </li>
-
-                        <li class="social-icon-item">
-                            <a href="#" class="social-icon-link bi-twitter"></a>
-                        </li>
-
-                        <li class="social-icon-item">
-                            <a href="#" class="social-icon-link bi-whatsapp"></a>
-                        </li>
-                    </ul>
-                    <p class="copyright-text">Design: <a rel="nofollow" href="https://templatemo.com"
-                            target="_blank">TemplateMo</a></p>
-
-                </div>
-
-            </div>
-        </div>
+        <h3 class="text-center">aasdkaas</h3>
 
         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
             <path fill="#81B29A" fill-opacity="1"
@@ -271,6 +233,25 @@ https://templatemo.com/tm-587-tiya-golf-club
         });
     </script>
 
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script>
+        function updateKapasitas() {
+            // Fetch updated data for kapasitas1
+            $.ajax({
+                url: '/new', // Ganti dengan URL endpoint untuk mendapatkan kapasitas terbaru
+                method: 'GET',
+                success: function (data) {
+                    // Perbarui nilai kapasitas1 pada elemen dengan ID "kapasitas1"
+                    $('#kapasitas1').text(data.kapasitas1 + '');
+                }
+            });
+        }
+
+        // Panggil updateKapasitas setiap 5 detik
+        setInterval(updateKapasitas, 5000);
+    </script>
+
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
 
 
 </body>

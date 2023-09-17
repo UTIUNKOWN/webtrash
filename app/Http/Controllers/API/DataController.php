@@ -29,7 +29,7 @@ class DataController extends Controller
             'kapasitas2' => $data,
         ]);
 
-        return view('realtime', [
+        return view('dashboard', [
             'kapasitas1' => $data['kapasitas1'],
             'kapasitas2' => $data['kapasitas2'],
         ]);
@@ -129,8 +129,8 @@ class DataController extends Controller
     }
 
     public function dashboard() {
-        $kapasitas1 = monitoring::where('id_sensor', 1)->latest('created_at')->value('kapasitas');
-        $kapasitas2 = monitoring::where('id_sensor', 2)->latest('created_at')->value('kapasitas');
+        $kapasitas1 = monitoring::where('id_sensor', 1)->latest('id')->value('kapasitas');
+        $kapasitas2 = monitoring::where('id_sensor', 2)->latest('id')->value('kapasitas');
 
         // Mengirimkan data ke view 'dashboard' dalam bentuk array
         return view('dashboard', [
@@ -329,5 +329,13 @@ class DataController extends Controller
     {
         $datas = Monitoring::orderBy('id', 'desc')->paginate(10);
         return view('data', compact('datas'));
+    }
+    public function realtime() {
+        $data['kapasitas1'] = monitoring::where('id_sensor', 1)->latest('id')->value('kapasitas');
+        $data['kapasitas2'] = monitoring::where('id_sensor', 2)->latest('id')->value('kapasitas');
+       return response()->json(
+            $data
+        );
+
     }
 }

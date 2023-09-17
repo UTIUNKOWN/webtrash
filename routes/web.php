@@ -26,3 +26,6 @@ Route::get('/kapasitassampah',[DataController::class,'getKapasitas']);
 Route::get('/kapasitassampah2',[DataController::class,'getKapasitas']);
 Route::get('/dashboard', [DataController::class,'dashboard']);
 Route::get('/data', [DataController::class,'data']);
+
+Route::get('/new',[DataController::class,'realtime']);
+
