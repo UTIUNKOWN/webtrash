@@ -242,7 +242,7 @@ https://templatemo.com/tm-587-tiya-golf-club
                 method: 'GET',
                 success: function (data) {
                     // Perbarui nilai kapasitas1 pada elemen dengan ID "kapasitas1"
-                    $('#kapasitas1').text(data.kapasitas1 + '');
+                    $('#kapasitas1').text(data.kapasitas1 + '%');
                 }
             });
         }
