@@ -138,7 +138,7 @@ https://templatemo.com/tm-587-tiya-golf-club
 
 
         <section class="about-section section-padding" id="section_2">
-            <div class="container" >
+            <div class="container">
                 <div></div>
             </div>
 
@@ -146,7 +146,7 @@ https://templatemo.com/tm-587-tiya-golf-club
 
                 <div class="row">
                     <!-- Bagian TEMPAT SAMPAH 1 -->
-                    <div class="col-6 mx-auto d-flex justify-content-center" >
+                    <div class="col-6 mx-auto d-flex justify-content-center">
                         <!-- Tambahkan kelas d-flex dan justify-content-center -->
                         <div class="card bg-white border-0" style="width: 20rem;">
                             <div class="w-2/4 flex-none">
@@ -188,7 +188,19 @@ https://templatemo.com/tm-587-tiya-golf-club
             </div>
         </section>
         <section class="section-bg-image">
-            <svg viewBox="0 0 1265 144" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><path fill="rgba(255, 255, 255, 1)" d="M 0 40 C 164 40 164 20 328 20 L 328 20 L 328 0 L 0 0 Z" stroke-width="0"></path> <path fill="rgba(255, 255, 255, 1)" d="M 327 20 C 445.5 20 445.5 89 564 89 L 564 89 L 564 0 L 327 0 Z" stroke-width="0"></path> <path fill="rgba(255, 255, 255, 1)" d="M 563 89 C 724.5 89 724.5 48 886 48 L 886 48 L 886 0 L 563 0 Z" stroke-width="0"></path><path fill="rgba(255, 255, 255, 1)" d="M 885 48 C 1006.5 48 1006.5 67 1128 67 L 1128 67 L 1128 0 L 885 0 Z" stroke-width="0"></path><path fill="rgba(255, 255, 255, 1)" d="M 1127 67 C 1196 67 1196 0 1265 0 L 1265 0 L 1265 0 L 1127 0 Z" stroke-width="0"></path></svg>
+            <svg viewBox="0 0 1265 144" xmlns="http://www.w3.org/2000/svg"
+                xmlns:xlink="http://www.w3.org/1999/xlink">
+                <path fill="rgba(255, 255, 255, 1)" d="M 0 40 C 164 40 164 20 328 20 L 328 20 L 328 0 L 0 0 Z"
+                    stroke-width="0"></path>
+                <path fill="rgba(255, 255, 255, 1)" d="M 327 20 C 445.5 20 445.5 89 564 89 L 564 89 L 564 0 L 327 0 Z"
+                    stroke-width="0"></path>
+                <path fill="rgba(255, 255, 255, 1)" d="M 563 89 C 724.5 89 724.5 48 886 48 L 886 48 L 886 0 L 563 0 Z"
+                    stroke-width="0"></path>
+                <path fill="rgba(255, 255, 255, 1)"
+                    d="M 885 48 C 1006.5 48 1006.5 67 1128 67 L 1128 67 L 1128 0 L 885 0 Z" stroke-width="0"></path>
+                <path fill="rgba(255, 255, 255, 1)" d="M 1127 67 C 1196 67 1196 0 1265 0 L 1265 0 L 1265 0 L 1127 0 Z"
+                    stroke-width="0"></path>
+            </svg>
 
             <div class="container">
                 <div class="row">
@@ -196,9 +208,11 @@ https://templatemo.com/tm-587-tiya-golf-club
                     <div class="col-lg-6 col-12">
                         <div class="section-bg-image-block">
 
-                            <h2 class="mb-lg-3">IMPLEMENTASI PEMODELAN EDGE COMPUTING PADA SISTEM PEMANTAUAN TEMPAT SAMPAH PINTAR</h2>
+                            <h2 class="mb-lg-3">IMPLEMENTASI PEMODELAN EDGE COMPUTING PADA SISTEM PEMANTAUAN TEMPAT
+                                SAMPAH PINTAR</h2>
 
-                            <p>Penelitian ini dilakukan di prodi rekayasa sistem komputer untuk memenuhi salah satu persyaratan memperoleh gelar S.Kom</p>
+                            <p>Penelitian ini dilakukan di prodi rekayasa sistem komputer untuk memenuhi salah satu
+                                persyaratan memperoleh gelar S.Kom</p>
 
                             {{-- <form action="#" method="get" class="custom-form mt-lg-4 mt-2" role="form">
                                 <div class="input-group input-group-lg">
@@ -215,7 +229,19 @@ https://templatemo.com/tm-587-tiya-golf-club
                 </div>
             </div>
 
-            <svg viewBox="0 0 1265 144" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><path fill="rgba(255, 255, 255, 1)" d="M 0 40 C 164 40 164 20 328 20 L 328 20 L 328 0 L 0 0 Z" stroke-width="0"></path> <path fill="rgba(255, 255, 255, 1)" d="M 327 20 C 445.5 20 445.5 89 564 89 L 564 89 L 564 0 L 327 0 Z" stroke-width="0"></path> <path fill="rgba(255, 255, 255, 1)" d="M 563 89 C 724.5 89 724.5 48 886 48 L 886 48 L 886 0 L 563 0 Z" stroke-width="0"></path><path fill="rgba(255, 255, 255, 1)" d="M 885 48 C 1006.5 48 1006.5 67 1128 67 L 1128 67 L 1128 0 L 885 0 Z" stroke-width="0"></path><path fill="rgba(255, 255, 255, 1)" d="M 1127 67 C 1196 67 1196 0 1265 0 L 1265 0 L 1265 0 L 1127 0 Z" stroke-width="0"></path></svg>
+            <svg viewBox="0 0 1265 144" xmlns="http://www.w3.org/2000/svg"
+                xmlns:xlink="http://www.w3.org/1999/xlink">
+                <path fill="rgba(255, 255, 255, 1)" d="M 0 40 C 164 40 164 20 328 20 L 328 20 L 328 0 L 0 0 Z"
+                    stroke-width="0"></path>
+                <path fill="rgba(255, 255, 255, 1)" d="M 327 20 C 445.5 20 445.5 89 564 89 L 564 89 L 564 0 L 327 0 Z"
+                    stroke-width="0"></path>
+                <path fill="rgba(255, 255, 255, 1)" d="M 563 89 C 724.5 89 724.5 48 886 48 L 886 48 L 886 0 L 563 0 Z"
+                    stroke-width="0"></path>
+                <path fill="rgba(255, 255, 255, 1)"
+                    d="M 885 48 C 1006.5 48 1006.5 67 1128 67 L 1128 67 L 1128 0 L 885 0 Z" stroke-width="0"></path>
+                <path fill="rgba(255, 255, 255, 1)" d="M 1127 67 C 1196 67 1196 0 1265 0 L 1265 0 L 1265 0 L 1127 0 Z"
+                    stroke-width="0"></path>
+            </svg>
         </section>
 
 
@@ -230,9 +256,19 @@ https://templatemo.com/tm-587-tiya-golf-club
                     <div class="col-lg-5 col-12 me-auto mb-4 mb-lg-0">
                         <h3 class="mb-3"></h3>
 
-                        <p><strong></strong>Sistem yang dibangun adalah sebuah sistem yang dapat memantau kapasitas sampah pada tempat sampah dengan menerapkan model edge computing yaitu pemrosesan awal atau pengumpulan data dilakukan di lokasi yang lebih dekat dengan sumber data. Sistem ini memanfaatkan perangkat keras NodeMCU ESP32 dan sensor ultrasonik untuk mengukur kapasitas tempat sampah dengan implementasi model edge computing yang berarti pengolahan data akan dilakukan terlebih dahulu dari tempat sampah ke edge server sebelum data dikirim ke server pusat. Sistem akan terhubung dengan server pusat melalui jaringan internet, memungkinkan data kapasitas sampah untuk diakses dan dikelola dari jarak jauh dengan demikian, pengguna dapat memantau kapasitas sampah pada setiap tempat sampah secara real-time. </p>
+                        <p><strong></strong>Sistem yang dibangun adalah sebuah sistem yang dapat memantau kapasitas
+                            sampah pada tempat sampah dengan menerapkan model edge computing yaitu pemrosesan awal atau
+                            pengumpulan data dilakukan di lokasi yang lebih dekat dengan sumber data. Sistem ini
+                            memanfaatkan perangkat keras NodeMCU ESP32 dan sensor ultrasonik untuk mengukur kapasitas
+                            tempat sampah dengan implementasi model edge computing yang berarti pengolahan data akan
+                            dilakukan terlebih dahulu dari tempat sampah ke edge server sebelum data dikirim ke server
+                            pusat. Sistem akan terhubung dengan server pusat melalui jaringan internet, memungkinkan
+                            data kapasitas sampah untuk diakses dan dikelola dari jarak jauh dengan demikian, pengguna
+                            dapat memantau kapasitas sampah pada setiap tempat sampah secara real-time. </p>
 
-                        <p> Hasil analisis QoS pengujian jaringan, pengiriman data dari node ke edge server dan cloud server diperoleh nilai rata-rata throughput 3344 Kbits/s dan nilai rata-rata delay 55,37 ms. dari hasil tersebut menunjukkan sangat baik </p>
+                        <p> Hasil analisis QoS pengujian jaringan, pengiriman data dari node ke edge server dan cloud
+                            server diperoleh nilai rata-rata throughput 3344 Kbits/s dan nilai rata-rata delay 55,37 ms.
+                            dari hasil tersebut menunjukkan sangat baik </p>
                     </div>
 
                     <div class="col-lg-3 col-md-6 col-12 mb-4 mb-lg-0 mb-md-0">
@@ -242,7 +278,7 @@ https://templatemo.com/tm-587-tiya-golf-club
 
 
 
-{{--
+                                {{--
                                 <ul class="social-icon">
                                     <li class="social-icon-item">
                                         <a href="#" class="social-icon-link bi-twitter"></a>
@@ -259,7 +295,8 @@ https://templatemo.com/tm-587-tiya-golf-club
                     <div class="col-lg-3 col-md-6 col-12">
                         <div class="member-block">
                             <div class="member-block-image-wrap">
-                                <img src="images/members/successful-asian-lady-boss-red-blazer-holding-clipboard-with-documens-pen-working-looking-happy-white-background.jpg" class="member-block-image img-fluid" alt="">
+                                <img src="images/members/successful-asian-lady-boss-red-blazer-holding-clipboard-with-documens-pen-working-looking-happy-white-background.jpg"
+                                    class="member-block-image img-fluid" alt="">
 
                                 <ul class="social-icon">
                                     <li class="social-icon-item">
