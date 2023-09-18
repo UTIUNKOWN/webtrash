@@ -195,6 +195,7 @@ https://templatemo.com/tm-587-tiya-golf-club
 
                     <div class="col-lg-6 col-12">
                         <div class="section-bg-image-block">
+                            <img src="img/siskom.png" class="section-bg-image-block" alt="Responsive image">
                             <h2 class="mb-lg-3">IMPLEMENTASI PEMODELAN EDGE COMPUTING PADA SISTEM PEMANTAUAN TEMPAT SAMPAH PINTAR</h2>
 
                             <p>Penelitian ini dilakukan di prodi rekayasa sistem komputer untuk memenuhi salah satu persyaratan memperoleh gelar S.Kom</p>
