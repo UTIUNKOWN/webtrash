@@ -203,9 +203,16 @@ https://templatemo.com/tm-587-tiya-golf-club
             </svg>
 
             <div class="container">
+
                 <div class="row">
 
                     <div class="col-lg-6 col-12">
+                        <div class="section-overlay">
+
+
+                        </div>
+
+
                         <div class="section-bg-image-block">
 
                             <h2 class="mb-lg-3">IMPLEMENTASI PEMODELAN EDGE COMPUTING PADA SISTEM PEMANTAUAN TEMPAT
@@ -223,7 +230,8 @@ https://templatemo.com/tm-587-tiya-golf-club
                                     <button type="submit" class="form-control">Subscribe</button>
                                 </div>
                             </form> --}}
-                        </div>
+
+                    </div>
                     </div>
 
                 </div>
