@@ -129,7 +129,7 @@ https://templatemo.com/tm-587-tiya-golf-club
                 <a class="navbar-brand d-flex align-items-center" href="index.html">
                     <img src="images/logo.png" class="navbar-brand-image img-fluid" alt="Tiya Golf Club">
                     <span class="navbar-brand-text">
-                        Siti
+                        Siti Rokoiye
                     </span>
                 </a>
 
@@ -165,7 +165,7 @@ https://templatemo.com/tm-587-tiya-golf-club
         </svg>
         <section>
             <div class="container" style="margin-top:0px; ">
-                {{-- <img src="img/TRASH.jpg" style="width: 100%; height: auto;"> --}}
+                {{-- <img src="img/TRASH.jpg" alt="" style="width: 100%; height: auto;"> --}}
                 <h2 class="text-center">Tabel Data Kapasitas Sampah</h2>
                 <table class="table table-success table-striped table-custom">
                     <thead>
@@ -205,7 +205,7 @@ https://templatemo.com/tm-587-tiya-golf-club
     </main>
 
     <footer class="site-footer">
-        <h3 class="text-center">aasdkaas</h3>
+        <h3 class="text-center">  </h3>
 
         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
             <path fill="#81B29A" fill-opacity="1"
@@ -224,7 +224,7 @@ https://templatemo.com/tm-587-tiya-golf-club
     <script src="{{ asset('template') }}/js/modernizr.js"></script>
     <script src="{{ asset('template') }}/js/custom.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
-    <script type="text/javascript">
+    {{-- <script type="text/javascript">
         $(document).ready(function() {
             setInterval(function() {
                 $("#progress").load("{{ url('kapasitassampah') }}");
@@ -232,9 +232,9 @@ https://templatemo.com/tm-587-tiya-golf-club
 
             }, 1000);
         });
-    </script>
+    </script> --}}
 
-    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    {{-- <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script>
         function updateKapasitas() {
             // Fetch updated data for kapasitas1
@@ -243,14 +243,14 @@ https://templatemo.com/tm-587-tiya-golf-club
                 method: 'GET',
                 success: function (data) {
                     // Perbarui nilai kapasitas1 pada elemen dengan ID "kapasitas1"
-                    $('#kapasitas1').text(data.kapasitas1 + '');
+                    $('#kapasitas1').text(data.kapasitas + '');
                 }
             });
         }
 
         // Panggil updateKapasitas setiap 5 detik
         setInterval(updateKapasitas, 5000);
-    </script>
+    </script> --}}
 
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
 

@@ -68,6 +68,7 @@ img {
   background-color: var(--pink-card);
   color: var(--text);
   cursor: pointer;
+  margin: 0 auto;
 }
 .card-blue {
   background: var(--blue-card);
