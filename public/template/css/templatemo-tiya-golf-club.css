@@ -696,7 +696,7 @@ strong {
 .section-bg-image {
     background-image: linear-gradient(rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.5)),
                       url('https://siskom.untan.ac.id/assets/images/siskom.png');
-    background-color: #ffffff;
+
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
