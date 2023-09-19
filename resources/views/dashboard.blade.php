@@ -380,6 +380,7 @@ https://templatemo.com/tm-587-tiya-golf-club
 
         function chart1(kapasitas1, id) {
 
+            kapasitas1 = Math.min(100, Math.max(0, kapasitas1));
             var dataset = [{
                     name: 'Direct',
                     count: kapasitas1
@@ -502,6 +503,7 @@ https://templatemo.com/tm-587-tiya-golf-club
         }
 
         function chart2(kapasitas2, id) {
+            kapasitas2 = Math.min(100, Math.max(0, kapasitas2));
 
             var dataset = [{
                     name: 'Direct',
