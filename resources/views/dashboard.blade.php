@@ -203,16 +203,13 @@ https://templatemo.com/tm-587-tiya-golf-club
             </svg>
 
             <div class="container">
+                <div class="section-overlay">
+
+
+                </div>
 
                 <div class="row">
-
-                    <div class="col-lg-6 col-12">
-                        <div class="section-overlay">
-
-
-                        </div>
-
-
+                    <div class="col-md-6 align-self-end">
                         <div class="section-bg-image-block">
 
                             <h2 class="mb-lg-3">IMPLEMENTASI PEMODELAN EDGE COMPUTING PADA SISTEM PEMANTAUAN TEMPAT
@@ -220,7 +217,6 @@ https://templatemo.com/tm-587-tiya-golf-club
 
                             <p>Penelitian ini dilakukan di prodi rekayasa sistem komputer untuk memenuhi salah satu
                                 persyaratan memperoleh gelar S.Kom</p>
-
                             {{-- <form action="#" method="get" class="custom-form mt-lg-4 mt-2" role="form">
                                 <div class="input-group input-group-lg">
                                     <span class="input-group-text bi-envelope" id="basic-addon1"></span>
@@ -230,12 +226,28 @@ https://templatemo.com/tm-587-tiya-golf-club
                                     <button type="submit" class="form-control">Subscribe</button>
                                 </div>
                             </form> --}}
-
+                        </div>
                     </div>
+                    {{-- <div class="col-md-3">
+                        <div class="card">
+                            <img class="card-img-top" src="img/kosong.png" alt="Card image cap">
+                            <div class="card-body">
+                                <p class="card-text"> Kondisi Tempat Sampah 0%</p>
+                            </div>
+                        </div>
                     </div>
-
+                    <div class="col-md-3">
+                        <div class="card">
+                            <img class="card-img-top" src="img/penuh.png" alt="Card image cap">
+                            <div class="card-body">
+                                <p class="card-text">Kondisi Tempat Sampah 100%</p>
+                            </div>
+                        </div>
+                    </div> --}}
                 </div>
+
             </div>
+
 
             <svg viewBox="0 0 1265 144" xmlns="http://www.w3.org/2000/svg"
                 xmlns:xlink="http://www.w3.org/1999/xlink">
@@ -264,7 +276,7 @@ https://templatemo.com/tm-587-tiya-golf-club
                     <div class="col-lg-5 col-12 me-auto mb-4 mb-lg-0">
                         <h3 class="mb-3"></h3>
 
-                        <p><strong></strong>Sistem yang dibangun adalah sebuah sistem yang dapat memantau kapasitas
+                        {{-- <p><strong></strong>Sistem yang dibangun adalah sebuah sistem yang dapat memantau kapasitas
                             sampah pada tempat sampah dengan menerapkan model edge computing yaitu pemrosesan awal atau
                             pengumpulan data dilakukan di lokasi yang lebih dekat dengan sumber data. Sistem ini
                             memanfaatkan perangkat keras NodeMCU ESP32 dan sensor ultrasonik untuk mengukur kapasitas
@@ -276,13 +288,27 @@ https://templatemo.com/tm-587-tiya-golf-club
 
                         <p> Hasil analisis QoS pengujian jaringan, pengiriman data dari node ke edge server dan cloud
                             server diperoleh nilai rata-rata throughput 3344 Kbits/s dan nilai rata-rata delay 55,37 ms.
-                            dari hasil tersebut menunjukkan sangat baik </p>
+                            dari hasil tersebut menunjukkan sangat baik </p> --}}
+                        <p style="text-align: justify;"><strong></strong>Pada penelitian ini telah berhasil dibangun
+                            sistem tempat sampah pintar dengan menerapkan model edge computing yaitu pemrosesan awal
+                            dilakukan dekat dengan sumber data dengan menggunakan edge server yang berada secara fisik
+                            lebih dekat dengan tempat sampah. Edge server beroperasi secara lokal, memproses, dan
+                            mengirimkan data dari berbagai tempat sampah. Penggunaan edge server pada sistem
+                            meningkatkan efisiensi dalam memproses dan mengirimkan data dari berbagai tempat sampah.
+                            Ketergantungan pada koneksi internet saat melakukan pemrosesan data dari perangkat IoT (edge
+                            gateway) dapat dikurangi karna edge server melakukan pemrosesan data secara lokal. Hasil
+                            dari pengujian QoS dengan implementasi pemodelan edge computing pada sistem pemantauan
+                            tempat sampah pintar dengan jarak 8 meter dan 26 meter dari edge server memperoleh nilai
+                            throughput rata-rata 1338 Kbps dengan kategori baik dan nilai delay rata-rata 115 ms dengan
+                            kategori sangat baik. </p>
+                        <p> </p>
                     </div>
 
                     <div class="col-lg-3 col-md-6 col-12 mb-4 mb-lg-0 mb-md-0">
                         <div class="member-block">
                             <div class="member-block-image-wrap" style="width: 500px; height: 600px;">
-                                <img src="img/edge.png" class="member-block-image img-fluid" alt="Responsive image">
+                                <img src="img/edgecomputing.png" class="member-block-image img-fluid"
+                                    alt="Responsive image">
 
 
 
@@ -328,19 +354,65 @@ https://templatemo.com/tm-587-tiya-golf-club
             </div>
         </section>
 
+        <section class="" id="section_5" style="background-color: rgb(61, 64, 91);margin-top: -150px; ">
+            <svg viewBox="0 0 1265 144" xmlns="http://www.w3.org/2000/svg"
+                xmlns:xlink="http://www.w3.org/1999/xlink">
+                <path fill="rgba(255, 255, 255, 1)" d="M 0 40 C 164 40 164 20 328 20 L 328 20 L 328 0 L 0 0 Z"
+                    stroke-width="0"></path>
+                <path fill="rgba(255, 255, 255, 1)" d="M 327 20 C 445.5 20 445.5 89 564 89 L 564 89 L 564 0 L 327 0 Z"
+                    stroke-width="0"></path>
+                <path fill="rgba(255, 255, 255, 1)" d="M 563 89 C 724.5 89 724.5 48 886 48 L 886 48 L 886 0 L 563 0 Z"
+                    stroke-width="0"></path>
+                <path fill="rgba(255, 255, 255, 1)"
+                    d="M 885 48 C 1006.5 48 1006.5 67 1128 67 L 1128 67 L 1128 0 L 885 0 Z" stroke-width="0"></path>
+                <path fill="rgba(255, 255, 255, 1)" d="M 1127 67 C 1196 67 1196 0 1265 0 L 1265 0 L 1265 0 L 1127 0 Z"
+                    stroke-width="0"></path>
+            </svg>
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-12 col-12 text-center" style="margin-top: -100px;">
+                        <h2 class="mb-lg-5 mb-4" style="color: rgb(0, 98, 255); text-shadow: -1px -1px 0 #fff, 1px -1px 0 #fff, -1px 1px 0 #fff, 1px 1px 0 #fff;">DOKUMENTASI</h2>
+
+                    </div>
+                    <div class="row justify-content-center" style="margin-bottom: 100px;">
+                    <div class="col-md-3">
+                        <div class="card h-100">
+                            <img class="rounded-circle" src="img/kosong.jpeg" alt="Card image cap">
+                            <div class="card-body">
+                                <p class="card-text text-center"> Kondisi Tempat Sampah 0%</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="card h-100">
+
+                            <img class="rounded-circle" src="img/penuh.jpeg" alt="Card image cap">
+                            <div class="card-body">
+                                <p class="card-text text-center">Kondisi Tempat Sampah 100%</p>
+
+
+
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        </section>
+
 
     </main>
 
-
-    <footer class="site-footer">
+{{--
+    <footer class="site-footer" style="margin-top: 50px;">
         <h3 class="text-center"></h3>
-
         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
             <path fill="#81B29A" fill-opacity="1"
                 d="M0,224L34.3,192C68.6,160,137,96,206,90.7C274.3,85,343,139,411,144C480,149,549,107,617,122.7C685.7,139,754,213,823,240C891.4,267,960,245,1029,224C1097.1,203,1166,181,1234,160C1302.9,139,1371,117,1406,106.7L1440,96L1440,320L1405.7,320C1371.4,320,1303,320,1234,320C1165.7,320,1097,320,1029,320C960,320,891,320,823,320C754.3,320,686,320,617,320C548.6,320,480,320,411,320C342.9,320,274,320,206,320C137.1,320,69,320,34,320L0,320Z">
             </path>
         </svg>
-    </footer>
+    </footer> --}}
 
     <!-- JAVASCRIPT FILES -->
     <script src="{{ asset('template') }}/js/jquery.min.js"></script>
