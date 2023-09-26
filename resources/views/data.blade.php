@@ -127,7 +127,7 @@ https://templatemo.com/tm-587-tiya-golf-club
 
             <div class="container">
                 <a class="navbar-brand d-flex align-items-center" href="index.html">
-                    <img src="images/logo.png" class="navbar-brand-image img-fluid" alt="Tiya Golf Club">
+                    <img src="images/logo.png" class="navbar-brand-image img-fluid" alt="">
                     <span class="navbar-brand-text">
                         Siti Rokoiye
                     </span>
@@ -170,7 +170,7 @@ https://templatemo.com/tm-587-tiya-golf-club
                 <table class="table table-success table-striped table-custom">
                     <thead>
                         <tr>
-                            <th style="width: 10px;">Waktu</th>
+                            <th style="width: 10px;">Tanggal - Waktu</th>
                             <th style="width: 50px;">Tempat Sampah</th>
                             <th style="width: 50px;">Kapasitas %</th>
                         </tr>
