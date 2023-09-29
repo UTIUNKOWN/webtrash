@@ -102,12 +102,12 @@ https://templatemo.com/tm-587-tiya-golf-club
                 <div class="row">
 
                     <div class="col-lg-6 col-12 mb-5 mb-lg-0">
-                        <h2 class="text-white">Welcome to Smart Trash</h2>
+                        <h2 class="text-white">waste bin monitoring system</h2>
 
                         <h1 class="cd-headline rotate-1 text-white mb-4 pb-2">
-                            <span>SMART</span>
+                            <span>WASTE BIN</span>
                             <span class="cd-words-wrapper">
-                                <b class="is-visible">TRASH</b>
+                                <b class="is-visible">MONITORING</b>
 
                             </span>
                         </h1>

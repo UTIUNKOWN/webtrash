@@ -103,12 +103,12 @@ https://templatemo.com/tm-587-tiya-golf-club
                 <div class="row">
 
                     <div class="col-lg-6 col-12 mb-5 mb-lg-0">
-                        <h2 class="text-white">Welcome to </h2>
+                        <h2 class="text-white">Welcome </h2>
 
                         <h1 class="cd-headline rotate-1 text-white mb-4 pb-2">
-                            <span>SMART</span>
+                            <span>WASTE BIN</span>
                             <span class="cd-words-wrapper">
-                                <b class="is-visible">TRASH</b>
+                                <b class="is-visible">MONITORING</b>
 
                             </span>
                         </h1>
@@ -213,7 +213,7 @@ https://templatemo.com/tm-587-tiya-golf-club
                         <div class="section-bg-image-block">
 
                             <h2 class="mb-lg-3">IMPLEMENTASI PEMODELAN EDGE COMPUTING PADA SISTEM PEMANTAUAN TEMPAT
-                                SAMPAH PINTAR</h2>
+                                SAMPAH</h2>
 
                             <p>Penelitian ini dilakukan di prodi rekayasa sistem komputer untuk memenuhi salah satu
                                 persyaratan memperoleh gelar S.Kom</p>
@@ -290,7 +290,7 @@ https://templatemo.com/tm-587-tiya-golf-club
                             server diperoleh nilai rata-rata throughput 3344 Kbits/s dan nilai rata-rata delay 55,37 ms.
                             dari hasil tersebut menunjukkan sangat baik </p> --}}
                         <p style="text-align: justify;"><strong></strong>Pada penelitian ini telah berhasil dibangun
-                            sistem tempat sampah pintar dengan menerapkan model edge computing yaitu pemrosesan awal
+                            sistem pemantauan tempat sampah dengan menerapkan model edge computing yaitu pemrosesan awal
                             dilakukan dekat dengan sumber data dengan menggunakan edge server yang berada secara fisik
                             lebih dekat dengan tempat sampah. Edge server beroperasi secara lokal, memproses, dan
                             mengirimkan data dari berbagai tempat sampah. Penggunaan edge server pada sistem
@@ -298,7 +298,7 @@ https://templatemo.com/tm-587-tiya-golf-club
                             Ketergantungan pada koneksi internet saat melakukan pemrosesan data dari perangkat IoT (edge
                             gateway) dapat dikurangi karna edge server melakukan pemrosesan data secara lokal. Hasil
                             dari pengujian QoS dengan implementasi pemodelan edge computing pada sistem pemantauan
-                            tempat sampah pintar dengan jarak 8 meter dan 26 meter dari edge server memperoleh nilai
+                            tempat sampah dengan jarak 8 meter dan 26 meter dari edge server memperoleh nilai
                             throughput rata-rata 1338 Kbps dengan kategori baik dan nilai delay rata-rata 115 ms dengan
                             kategori sangat baik. </p>
                         <p> </p>
@@ -371,40 +371,36 @@ https://templatemo.com/tm-587-tiya-golf-club
             <div class="container">
                 <div class="row">
                     <div class="col-lg-12 col-12 text-center" style="margin-top: -100px;">
-                        <h2 class="mb-lg-5 mb-4" style="color: rgb(0, 98, 255); text-shadow: -1px -1px 0 #fff, 1px -1px 0 #fff, -1px 1px 0 #fff, 1px 1px 0 #fff;">DOKUMENTASI</h2>
+                        <h2 class="mb-lg-5 mb-4"
+                            style="color: rgb(0, 98, 255); text-shadow: -1px -1px 0 #fff, 1px -1px 0 #fff, -1px 1px 0 #fff, 1px 1px 0 #fff;">
+                            DOKUMENTASI</h2>
 
                     </div>
                     <div class="row justify-content-center" style="margin-bottom: 100px;">
-                    <div class="col-md-3">
-                        <div class="card h-100">
-                            <img class="rounded-circle" src="img/kosong.jpeg" alt="Card image cap">
-                            <div class="card-body">
-                                <p class="card-text text-center"> Kondisi Tempat Sampah 0%</p>
+                        <div class="col-md-3">
+                            <div class="card h-100">
+                                <img class="rounded-circle" src="img/kosong.jpeg" alt="Card image cap">
+                                <div class="card-body">
+                                    <p class="card-text text-center"> Kondisi Tempat Sampah 0%</p>
+                                </div>
                             </div>
                         </div>
-                    </div>
-                    <div class="col-md-3">
-                        <div class="card h-100">
+                        <div class="col-md-3">
+                            <div class="card h-100">
 
-                            <img class="rounded-circle" src="img/penuh.jpeg" alt="Card image cap">
-                            <div class="card-body">
-                                <p class="card-text text-center">Kondisi Tempat Sampah 100%</p>
-
-
-
-
+                                <img class="rounded-circle" src="img/penuh.jpeg" alt="Card image cap">
+                                <div class="card-body">
+                                    <p class="card-text text-center">Kondisi Tempat Sampah 100%</p>
+                                </div>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
-        </div>
         </section>
-
-
     </main>
 
-{{--
+    {{--
     <footer class="site-footer" style="margin-top: 50px;">
         <h3 class="text-center"></h3>
         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
@@ -433,15 +429,6 @@ https://templatemo.com/tm-587-tiya-golf-club
         });
     </script> --}}
     <!-- Script untuk mengupdate chart secara berkala -->
-
-
-
-
-
-
-
-
-
     {{-- <script src="//code.jquery.com/jquery-3.6.0.min.js"></script> --}}
     <script src="//cdnjs.cloudflare.com/ajax/libs/d3/3.5.5/d3.min.js"></script>
     <script>
@@ -829,13 +816,6 @@ https://templatemo.com/tm-587-tiya-golf-club
         // Update the charts every 5 seconds
         setInterval(updateCharts, 5000);
     </script>
-
-
-
-
-
-
-
     {{-- <script>
         $(document).ready(function() {
             // Function to fetch data from the server
