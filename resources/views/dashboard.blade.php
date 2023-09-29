@@ -43,7 +43,7 @@ https://templatemo.com/tm-587-tiya-golf-club
                 <a class="navbar-brand d-flex align-items-center">
 
                     <span class="navbar-brand-text">
-                        Siti Rokoiye
+                        monitoring waste capacity
                     </span>
                 </a>
 
