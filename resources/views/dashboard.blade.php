@@ -295,8 +295,7 @@ https://templatemo.com/tm-587-tiya-golf-club
                             lebih dekat dengan tempat sampah. Edge server beroperasi secara lokal, memproses, dan
                             mengirimkan data dari berbagai tempat sampah. Penggunaan edge server pada sistem
                             meningkatkan efisiensi dalam memproses dan mengirimkan data dari berbagai tempat sampah.
-                            Ketergantungan pada koneksi internet saat melakukan pemrosesan data dari perangkat IoT (edge
-                            gateway) dapat dikurangi karna edge server melakukan pemrosesan data secara lokal. Hasil
+                            Ketergantungan pada koneksi internet saat melakukan pemrosesan data dari perangkat IoT dapat dikurangi karna edge server melakukan pemrosesan data secara lokal. Hasil
                             dari pengujian QoS dengan implementasi pemodelan edge computing pada sistem pemantauan
                             tempat sampah dengan jarak 8 meter dan 26 meter dari edge server memperoleh nilai
                             throughput rata-rata 1338 Kbps dengan kategori baik dan nilai delay rata-rata 115 ms dengan
@@ -345,7 +344,7 @@ https://templatemo.com/tm-587-tiya-golf-club
                             <div class="member-block-info d-flex align-items-center">
                                 <h4> </h4>
 
-                                <p class="ms-auto">C </p>
+                                <p class="ms-auto"> </p>
                             </div>
                         </div>
                     </div>
