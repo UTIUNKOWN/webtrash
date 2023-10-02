@@ -305,8 +305,8 @@ https://templatemo.com/tm-587-tiya-golf-club
 
                     <div class="col-lg-3 col-md-6 col-12 mb-4 mb-lg-0 mb-md-0">
                         <div class="member-block">
-                            <div class="member-block-image-wrap" style="width: 500px; height: 600px;">
-                                <img src="img/edgecomputing.png" class="member-block-image img-fluid"
+                            <div class="member-block-image-wrap" style="width: 600px; height: 600px;">
+                                <img src="img/skripsifix.png" class="img-fluid"
                                     alt="Responsive image">
 
 
