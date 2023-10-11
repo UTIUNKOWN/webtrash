@@ -268,157 +268,101 @@ https://templatemo.com/tm-587-tiya-golf-club
         <section class="about-section section-padding" id="section_2">
             <div class="container">
                 <div class="row">
-                    <div class="col-lg-12 col-12 text-center" style="margin-top: -10px;">
-                        <h2 class="mb-lg-5 mb-4"
-                            style="color: rgb(0, 98, 255); text-shadow: -1px -1px 0 #fff, 1px -1px 0 #fff, -1px 1px 0 #fff, 1px 1px 0 #fff;">
-                            TENTANG PENELITIAN</h2>
 
+                    <div class="col-lg-12 col-12 text-center">
+                        <h2 class="mb-lg-5 mb-4">TENTANG PENELITIAN</h2>
                     </div>
-                    <div class="row justify-content-center">
-                        <div class="col-sm-6 col-xs-6">
-                            <h2 style="text-transform: uppercase; font-size: 20px;">Mengapa Edge Computing</h2>
 
-                            <p style="font-size: 17px; text-align: justify; ">Edge Computing adalah model komputasi
-                                baru
-                                yang menyebarkan sumber daya komputasi dan penyimpanan di tepi jaringan lebih dekat ke
-                                sensor atau sumber data (Cao dkk., 2020). <br><br>
-                                Pada penelitian memanfaatkan model edge computing untuk memproses dan mengirimkan data
-                                dari dua tempat sampah yang dijadikan objek penelitian menjadi fokus utama dalam
-                                pengumpulan data. Data akan dikirimkan dan diolah oleh edge server untuk kemudian
-                                diteruskan ke cloud server. Penggunaan edge server dalam sistem ini bertujuan untuk
-                                melakukan proses pengiriman dan pengolahan data dari dua tempat sampah, sekaligus
-                                mengurangi ketergantungan pada koneksi internet dalam melakukan pemrosesan data dari
-                                tempat sampah.
-                            </p>
+                    <div class="col-lg-5 col-12 me-auto mb-4 mb-lg-0">
 
-                        </div>
-                        <div class="col-sm-4 col-xs-12">
-                            <div class="section-title">
-                                <!-- <h2 style="text-transform:uppercase"></h2> -->
-                                <!-- <p></p> -->
-                                <img src="img/edgeserver.png" class="img-fluid" alt="Responsive image"
-                                    style="width: 400px; border: 2px solid blue;">
+                        <h2 style="text-transform:uppercase">MODEL ARSITEKTUR JARINGAN</h2>
+
+                        {{-- <p><strong></strong>Sistem yang dibangun adalah sebuah sistem yang dapat memantau kapasitas
+                            sampah pada tempat sampah dengan menerapkan model edge computing yaitu pemrosesan awal atau
+                            pengumpulan data dilakukan di lokasi yang lebih dekat dengan sumber data. Sistem ini
+                            memanfaatkan perangkat keras NodeMCU ESP32 dan sensor ultrasonik untuk mengukur kapasitas
+                            tempat sampah dengan implementasi model edge computing yang berarti pengolahan data akan
+                            dilakukan terlebih dahulu dari tempat sampah ke edge server sebelum data dikirim ke server
+                            pusat. Sistem akan terhubung dengan server pusat melalui jaringan internet, memungkinkan
+                            data kapasitas sampah untuk diakses dan dikelola dari jarak jauh dengan demikian, pengguna
+                            dapat memantau kapasitas sampah pada setiap tempat sampah secara real-time. </p>
+
+                        <p> Hasil analisis QoS pengujian jaringan, pengiriman data dari node ke edge server dan cloud
+                            server diperoleh nilai rata-rata throughput 3344 Kbits/s dan nilai rata-rata delay 55,37 ms.
+                            dari hasil tersebut menunjukkan sangat baik </p> --}}
+                        <p style="text-align: justify;"><strong></strong>Pada penelitian ini telah berhasil dibangun
+                            sistem pemantauan tempat sampah dengan menerapkan model edge computing yaitu pemrosesan awal
+                            dilakukan dekat dengan sumber data dengan menggunakan edge server yang berada secara fisik
+                            lebih dekat dengan tempat sampah. Edge server beroperasi secara lokal, memproses, dan
+                            mengirimkan data dari berbagai tempat sampah. Penggunaan edge server pada sistem
+                            meningkatkan efisiensi dalam memproses dan mengirimkan data dari berbagai tempat sampah.
+                            Ketergantungan pada koneksi internet saat melakukan pemrosesan data dari perangkat IoT dapat
+                            dikurangi karna edge server melakukan pemrosesan data secara lokal. Hasil
+                            dari pengujian QoS dengan implementasi pemodelan edge computing pada sistem pemantauan
+                            tempat sampah dengan jarak 8 meter dan 26 meter dari edge server memperoleh nilai
+                            throughput rata-rata 1338 Kbps dengan kategori baik dan nilai delay rata-rata 115 ms dengan
+                            kategori sangat baik. </p>
+                        <p> </p>
+                    </div>
+
+                    <div class="col-lg-3 col-md-6 col-12 mb-4 mb-lg-0 mb-md-0">
+                        <div class="member-block">
+                            <div class="member-block-image-wrap" style="width: 600px; height: 600px;">
+                                <img src="img/skripsifix.png" class="img-fluid" alt="Responsive image">
+
+
+
+                                {{--
+                                <ul class="social-icon">
+                                    <li class="social-icon-item">
+                                        <a href="#" class="social-icon-link bi-twitter"></a>
+                                    </li>
+
+                                    <li class="social-icon-item">
+                                        <a href="#" class="social-icon-link bi-whatsapp"></a>
+                                    </li> --}}
+                                </ul>
                             </div>
-
                         </div>
                     </div>
 
 
-                    <div class="row justify-content-center" style="margin-top: 20px;">
 
-                        <div class="col-sm-4 col-xs-12">
-                            <img src="img/tempatsampah.png" class="img-fluid" alt="Responsive image"
-                                style="width: 1000px; border: 2px solid blue;">
-
-
+                    <div class="col-lg-3 col-md-6 col-12">
+                        <div class="member-block">
+                            <div class="member-block-image-wrap">
+                                <img src="images/members/successful-asian-lady-boss-red-blazer-holding-clipboard-with-documens-pen-working-looking-happy-white-background.jpg"
+                                    class="member-block-image img-fluid" alt="">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-sm-6 col-xs-12">
+                            <img src="img/skripsifix.png" class="img-fluid" alt="Responsive image">
                         </div>
                         <div class="col-sm-6 col-xs-12">
-
                             <div class="section-title">
                                 <!-- <h2 style="text-transform:uppercase"></h2> -->
                                 <!-- <p></p> -->
-                                <h2 style="text-transform: uppercase; font-size: 20px;">Sistem Pemantauan Tempat Sampah
-                                </h2>
-                                <p style="font-size: 17px; text-align: justify;"> Komponen utama dalam sistem
-                                    pemantauan kapasitas sampah tersebut adalah NodeMCU
-                                    ESP32 dan sensor ultrasonik. Sensor ultrasonik yang terhubung dengan NodeMCU ESP32
-                                    berperan untuk mengukur kapasitas sampah di dalam tempat sampah dengan meletakkan
-                                    sensor di atas tutup tempat sampah.
-                                    Hasil dari pengujian yang dilakukan, menunjukkan bahwa sistem ini mampu mengukur
-                                    kapasitas tempat sampah dengan tingkat akurasi yang tinggi. Tingkat galat yang
-                                    diperoleh dalam pengukuran sangat rendah, yaitu 3,62% untuk tempat sampah 1 dan 2,1%
-                                    untuk tempat sampah 2. Data tersebut kemudian akan diproses
-                                    oleh NodeMCU ESP32 dan dikirim ke edge server untuk disimpan ke edge. NodeMCU
-                                    ESP32 juga berfungsi sebagai perangkat penghubung antara sensor ultrasonik dengan
-                                    edge server.
-
+                                <h2 style="text-transform:uppercase">MENGAPA PERTAMINA</h2>
+                                <p style="font-size: 17px; text-align: justify;">Pertamina adalah Perusahaan BUMN yang bergerak di bidang energi dan penyumbang deviden terbesar
+                                  di Indonesia. Memiliki bisnis dari hulu sampai hilir yang terintegrasi, mulai dari Eksplorasi dan Produksi,
+                                  Pengolahan, Distribusi dan Pemasaran, yang berdasarkan tata nilai AKHLAK sebagai core values.<br><br>
+                                  Perwira adalah singkatan dari Pertamina Wira yang merupakan sebutan untuk pekerja Pertamina. Bagi
+                                  perusahaan, Perwira adalah asset yang sangat berharga untuk mengakselerasi pencapaian visi menjadi
+                                  perusahaan energi nasional kelas dunia dan menjadi global energy champion dengan nilai pasar US$ 100
+                                  miliar di tahun 2024.
                                 </p>
                             </div>
 
-                        </div>
-
-                        <div class="row justify-content-center" style="margin-top: 20px;">
-                            <div class="col-sm-6 col-xs-6">
-                                <h2 style="text-transform: uppercase; font-size: 20px; ">Model Arsitektur Jaringan</h2>
-
-                                <p style="font-size: 17px; text-align: justify;">Proses dimulai dengan node yang
-                                    bertugas mengumpulkan data dari tempat sampah. Data ini mencakup informasi tentang
-                                    kapasitas sampah. Selanjutnya, data dari node akan dikirimkan ke edge server
-                                    menggunakan HTTP request dengan bantuan API dan menggunakan jaringan lokal MIPA.
-                                    Edge server menerima data dan menyimpannya di dalam database. Setelah tersimpan,
-                                    data akan dikirimkan ke cloud server melalui HTTP request. Jika koneksi internet
-                                    stabil atau tidak ada gangguan, edge server akan melakukan HTTP request untuk
-                                    menyimpan data di dalam database cloud server. Data tersebut kemudian dapat diakses
-                                    melalui website. Pada sistem ini memanfaatkan model edge computing untuk memproses
-                                    data dekat dengan sumber data ataupun lokal dengan memanfaatkan edge server sebagai
-                                    pusat pengelolaan dan pengiriman data dari berbagai tempat sampah. Penggunaan edge
-                                    server pada sistem meningkatkan efisiensi dalam pengiriman data dari dua tempat
-                                    sampah juga mengurangi
-                                    ketergantungan pada koneksi internet saat melakukan pemrosesan data dari node atau
-                                    tempat sampah. <br><br>
-
-                                </p>
-
-                            </div>
-                            <div class="col-sm-4 col-xs-12">
-                                <div class="section-title text-center">
-                                    <!-- <h2 style="text-transform:uppercase"></h2> -->
-                                    <!-- <p></p> -->
-                                    <img src="img/jaringan.png" class="img-fluid" alt="Responsive image"
-                                        style="width: 400px; border: 2px solid blue;">
-                                </div>
-
-                            </div>
-                        </div>
-
-                        <div class="row justify-content-center" style="margin-top: 20px;">
-
-                            <div class="col-sm-4 col-xs-12">
-                                <img src="img/hasil.png" class="img-fluid" alt="Responsive image"
-                                    style="width: 1000px; border: 2px solid blue;">
-
-
-                            </div>
-                            <div class="col-sm-6 col-xs-12">
-
-                                <div class="section-title">
-                                    <!-- <h2 style="text-transform:uppercase"></h2> -->
-                                    <!-- <p></p> -->
-                                    <h2 style="text-transform: uppercase; font-size: 20px;"> Output Penelitian
-                                    </h2>
-                                    <p style="font-size: 17px; text-align: justify;"> Pada penelitian ini telah
-                                        berhasil
-                                        dibangun
-                                        sistem pemantauan tempat sampah dengan menerapkan model edge computing yaitu
-                                        pemrosesan awal
-                                        dilakukan dekat dengan sumber data dengan menggunakan edge server yang berada
-                                        secara fisik
-                                        lebih dekat dengan tempat sampah. Edge server beroperasi secara lokal,
-                                        memproses, dan
-                                        mengirimkan data dari berbagai tempat sampah. Penggunaan edge server pada sistem
-                                        meningkatkan efisiensi dalam memproses dan mengirimkan data dari berbagai tempat
-                                        sampah.
-                                        Ketergantungan pada koneksi internet saat melakukan pemrosesan data dari
-                                        perangkat IoT dapat
-                                        dikurangi karna edge server melakukan pemrosesan data secara lokal. Hasil
-                                        dari pengujian QoS dengan implementasi pemodelan edge computing pada sistem
-                                        pemantauan
-                                        tempat sampah dengan jarak 8 meter dan 26 meter dari edge server memperoleh
-                                        nilai
-                                        throughput rata-rata 1338 Kbps dengan kategori baik dan nilai delay rata-rata
-                                        115 ms dengan
-                                        kategori sangat baik
-
-                                    </p>
-                                </div>
-
-                            </div>
                         </div>
                     </div>
+
                 </div>
+            </div>
         </section>
 
-        <section class="" id="section_5" style="background-color: rgb(61, 64, 91);  margin-top: -80px;">
+        <section class="" id="section_5" style="background-color: rgb(61, 64, 91);margin-top: -150px; ">
             <svg viewBox="0 0 1265 144" xmlns="http://www.w3.org/2000/svg"
                 xmlns:xlink="http://www.w3.org/1999/xlink">
                 <path fill="rgba(255, 255, 255, 1)" d="M 0 40 C 164 40 164 20 328 20 L 328 20 L 328 0 L 0 0 Z"
