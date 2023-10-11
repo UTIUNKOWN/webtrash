@@ -215,8 +215,8 @@ https://templatemo.com/tm-587-tiya-golf-club
                             <h2 class="mb-lg-3">IMPLEMENTASI PEMODELAN EDGE COMPUTING PADA SISTEM PEMANTAUAN TEMPAT
                                 SAMPAH</h2>
 
-                            <p>Penelitian ini dilakukan di prodi rekayasa sistem komputer untuk memenuhi salah satu
-                                persyaratan memperoleh gelar S.Kom</p>
+                            <p>Penelitian ini dilakukan di prodi Rekayasa Sistem Komputer untuk memenuhi salah satu
+                                persyaratan memperoleh gelar S.Kom.</p>
                             {{-- <form action="#" method="get" class="custom-form mt-lg-4 mt-2" role="form">
                                 <div class="input-group input-group-lg">
                                     <span class="input-group-text bi-envelope" id="basic-addon1"></span>
