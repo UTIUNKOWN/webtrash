@@ -11,7 +11,10 @@
     <title>pantau sampah</title>
 
     <!-- CSS FILES -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0/css/bootstrap.min.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0/js/bootstrap.min.js"></script>
 
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 
@@ -139,32 +142,24 @@ https://templatemo.com/tm-587-tiya-golf-club
 
         <section class="about-section section-padding" id="section_2">
             <div class="container">
-                <div></div>
-            </div>
-
-            <div class="container ">
-
                 <div class="row">
                     <!-- Bagian TEMPAT SAMPAH 1 -->
-                    <div class="col-6 mx-auto d-flex justify-content-center">
-                        <!-- Tambahkan kelas d-flex dan justify-content-center -->
+                    <div class="col-md-6 mx-auto d-flex justify-content-center">
                         <div class="card bg-white border-0" style="width: 20rem;">
                             <div class="w-2/4 flex-none">
-                                <h3></h3>
-                                <div class="text-lg font-medium truncate text-center" style="color: rgb(28, 162, 189);">
+                                <div class="text-lg font-medium truncate text-center" style="color: rgb(0, 123, 255);">
                                     KAPASITAS</div>
-                                <div class="text-slate-500 mt-1 text-center" style="color: rgb(28, 162, 189);">TEMPAT
+                                <div class="text-center" style="color: rgb(0, 136, 255);">TEMPAT
                                     SAMPAH 1</div>
                             </div>
                             <div class="flex-none ml-auto relative">
-                                <div id="chart-1" class="chart-container"></div>
+                                <div id="chart-1" class="chart-container" ></div>
                             </div>
                         </div>
                     </div>
 
                     <!-- Bagian TEMPAT SAMPAH 2 -->
-                    <div class="col-6 mx-auto d-flex justify-content-center">
-                        <!-- Tambahkan kelas d-flex dan justify-content-center -->
+                    <div class="col-md-6 mx-auto d-flex justify-content-center">
                         <div class="card bg-white border-0" style="width: 20rem;">
                             <div class="w-2/4 flex-none">
                                 <div class="text-lg font-medium truncate text-center" style="color: rgb(0, 123, 255);">
@@ -178,13 +173,6 @@ https://templatemo.com/tm-587-tiya-golf-club
                         </div>
                     </div>
                 </div>
-
-                <div class="row">
-
-                </div>
-
-
-
             </div>
         </section>
         <section class="section-bg-image">
@@ -663,7 +651,7 @@ https://templatemo.com/tm-587-tiya-golf-club
             var innerRadiusArcShadow = innerRadiusArc - shadowWidth;
 
             var color = d3.scale.ordinal()
-                .range(['#41B787', '#6352B9', '#B65480', '#D5735A', '#D7D9DA']);
+            .range(['#41B787', '#FFFF00', '#FFA500', '#FF0000', '#D7D9DA']);
 
             var svg = d3.select(id)
                 .append("svg")
