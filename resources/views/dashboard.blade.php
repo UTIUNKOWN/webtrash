@@ -651,7 +651,7 @@ https://templatemo.com/tm-587-tiya-golf-club
             var innerRadiusArcShadow = innerRadiusArc - shadowWidth;
 
             var color = d3.scale.ordinal()
-            .range(['#41B787', '#FFFF00', '#FFA500', '#FF0000', '#D7D9DA']);
+                .range(['#41B787', '#6352B9', '#B65480', '#D5735A', '#D7D9DA']);
 
             var svg = d3.select(id)
                 .append("svg")
