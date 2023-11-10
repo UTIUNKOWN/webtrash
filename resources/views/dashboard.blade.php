@@ -27,13 +27,19 @@
 
     <link href="{{ asset('template/css/templatemo-tiya-golf-club.css') }}" rel="stylesheet">
 
-    <!--
-
-TemplateMo 587 Tiya Golf Club
-
-https://templatemo.com/tm-587-tiya-golf-club
-
--->
+    <script>
+        function playSoundWhenFull(volume_p) {
+            var audio = new Audio("{{ asset('assets/audio/makasih.mp3') }}");
+            var audio1 = new Audio("{{ asset('assets/audio/sudahpenuh.mp3') }}");
+            if (volume_p < 99) {
+                console.log(10)
+                audio.play();
+            } else {
+                console.log("tessss")
+                audio1.play();
+            }
+        }
+    </script>
 
 </head>
 
@@ -153,7 +159,8 @@ https://templatemo.com/tm-587-tiya-golf-club
                                     SAMPAH 1</div>
                             </div>
                             <div class="flex-none ml-auto relative">
-                                <div id="chart-1" class="chart-container" ></div>
+                                <div id="chart-1" class="chart-container"></div>
+
                             </div>
                         </div>
                     </div>
@@ -176,8 +183,7 @@ https://templatemo.com/tm-587-tiya-golf-club
             </div>
         </section>
         <section class="section-bg-image">
-            <svg viewBox="0 0 1265 144" xmlns="http://www.w3.org/2000/svg"
-                xmlns:xlink="http://www.w3.org/1999/xlink">
+            <svg viewBox="0 0 1265 144" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
                 <path fill="rgba(255, 255, 255, 1)" d="M 0 40 C 164 40 164 20 328 20 L 328 20 L 328 0 L 0 0 Z"
                     stroke-width="0"></path>
                 <path fill="rgba(255, 255, 255, 1)" d="M 327 20 C 445.5 20 445.5 89 564 89 L 564 89 L 564 0 L 327 0 Z"
@@ -481,6 +487,10 @@ https://templatemo.com/tm-587-tiya-golf-club
             }, 1000);
         });
     </script> --}}
+    {{--
+         <script >
+
+    </script>  --}}
     <!-- Script untuk mengupdate chart secara berkala -->
     {{-- <script src="//code.jquery.com/jquery-3.6.0.min.js"></script> --}}
     <script src="//cdnjs.cloudflare.com/ajax/libs/d3/3.5.5/d3.min.js"></script>
@@ -489,6 +499,7 @@ https://templatemo.com/tm-587-tiya-golf-club
         var kapasitas2 = {{ $kapasitas2 }};
         chart1(kapasitas1, '#chart-1');
         chart2(kapasitas2, '#chart-2');
+
 
         function chart1(kapasitas1, id) {
 
@@ -651,7 +662,7 @@ https://templatemo.com/tm-587-tiya-golf-club
             var innerRadiusArcShadow = innerRadiusArc - shadowWidth;
 
             var color = d3.scale.ordinal()
-                .range(['#41B787', '#6352B9', '#B65480', '#D5735A', '#D7D9DA']);
+            .range(['#41B787', '#6352B9', '#B65480', '#D5735A', '#D7D9DA']);
 
             var svg = d3.select(id)
                 .append("svg")
@@ -740,7 +751,11 @@ https://templatemo.com/tm-587-tiya-golf-club
     </script>
     {{-- ini realtime --}}
     <script>
+        var prev_val = 0;
+        var prev_val2 = 0;
+
         function updateCharts() {
+
             // Fetch updated data for chart-1 and chart-2
             $.ajax({
                 url: '/new', // Replace with your API endpoint to get updated data
@@ -748,12 +763,23 @@ https://templatemo.com/tm-587-tiya-golf-club
                 success: function(data) {
                     var kapasitas1 = data.kapasitas1;
                     var kapasitas2 = data.kapasitas2;
+                    if (prev_val != kapasitas1) {
+                        prev_val = kapasitas1;
+                        console.log(prev_val)
+                        playSoundWhenFull(kapasitas1)
+                        updateChart(kapasitas1, '#chart-1', '');
 
+                    }
+                    if (prev_val2 != kapasitas2) {
+                        prev_val2 = kapasitas2
+                        playSoundWhenFull(kapasitas2)
+                        updateChart(kapasitas2, '#chart-2', '');
+
+                    }
                     // Update chart-1
-                    updateChart(kapasitas1, '#chart-1', '');
-
+                    // playSoundWhenFull(kapasitas1 == 66)
                     // Update chart-2
-                    updateChart(kapasitas2, '#chart-2', '');
+
                 }
             });
         }
