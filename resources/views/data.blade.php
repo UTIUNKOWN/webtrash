@@ -126,7 +126,7 @@ https://templatemo.com/tm-587-tiya-golf-club
         <nav class="navbar navbar-expand-lg navbar-dark fixed-top" style="background-color: rgb(61, 64, 91);">
 
             <div class="container">
-                <a class="navbar-brand d-flex align-items-center" href="index.html">
+                <a class="navbar-brand d-flex align-items-center" href="dashboard.blade.php">
                     {{-- <img src="images/logo.png" class="navbar-brand-image img-fluid" alt=""> --}}
                     <span class="navbar-brand-text">
                         monitoring waste capacity
