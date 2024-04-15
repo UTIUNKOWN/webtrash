@@ -436,7 +436,18 @@
                             DOKUMENTASI</h2>
 
                     </div>
-                    <div class="row justify-content-center" style="margin-bottom: 100px;">
+                    <div class="row justify-content-center">
+                        <div class="col-md-6">
+                            <video width="100%" controls>
+                                <source src="img/vid.mp4" type="video/mp4">
+                                Your browser does not support the video tag.
+                            </video>
+                        </div>
+                    </div>
+                </div>
+
+
+                    {{-- <div class="row justify-content-center" style="margin-bottom: 100px;">
                         <div class="col-md-3">
                             <div class="card h-100">
                                 <img class="rounded-circle" src="img/kosong.jpeg" alt="Card image cap">
@@ -453,7 +464,7 @@
                                 </div>
                             </div>
                         </div>
-                    </div>
+                    </div> --}}
                 </div>
             </div>
         </section>
